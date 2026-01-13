@@ -1,0 +1,1 @@
+C:\Users\Shazil\Desktop\Elktech-Internship\elktech--internship\hello_rust\rust_project\target\debug\rust_project.exe: C:\Users\Shazil\Desktop\Elktech-Internship\elktech--internship\hello_rust\rust_project\src\main.rs
