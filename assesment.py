@@ -1,14 +1,14 @@
 import random
-totalGames=0
-totalWon=0
-totalLoss=0
-totalGuess=0
 
 while True:
-    print("*****Menu*****")
+    print("Menu")
     print("1.Play Game")
     print("2.View Statistics")
     print("3.Exit")
+    totalGames=0
+    totalWon=0
+    totalLoss=0
+    totalGuess=0
     choice = input("Enter your choice:")
     if not choice.isdigit():
         print("Please enter a valid number.")
@@ -30,27 +30,27 @@ while True:
                 print("Please enter a number between 1 and 100.")
                 continue
             if guess in guessed:
-                print("You already guessed that number. Try again.")
+                print("You already guessed that number.Try again.")
                 continue
             guessed.append(guess)
             totalGuess+=1       
             if guess==number:
-                print("Congratulations! You guessed the number.")
+                print("Congratulations You guessed the number.")
                 totalWon+=1
                 won=True
                 break
             elif guess<number:
-                print("Too low!")       
+                print("Too low")       
             else:
                 print("Too high!")  
             attempts-=1
             print(f"You have {attempts} attempts left.")
         if not won:
-            print(f"Sorry, you've used all attempts.The number was {number}.")
+            print(f"Sorry,you've used all attempts.The number was {number}.")
             totalLoss+=1
         totalGames+=1
     elif choice == 2:
-        print("*****Statistics*****")
+        print("Statistics")
         print(f"Total Games Played: {totalGames}")
         print(f"Total Games Won: {totalWon}")
         print(f"Total Games Lost: {totalLoss}")
