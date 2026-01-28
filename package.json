@@ -1,0 +1,24 @@
+{
+  "name": "elktech--internship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node nodeExpress.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shazil-mirza/elktech--internship.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shazil-mirza/elktech--internship/issues"
+  },
+  "homepage": "https://github.com/shazil-mirza/elktech--internship#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
