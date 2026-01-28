@@ -31,14 +31,14 @@ app.put("/tasks/:id", (req, res) => {
         }
     }
     if (!taskFound) {
-        res.status(404).json({ message: "Task not found" });
+        res.status(404).json({message:"Task not found"});
     }
 });
 app.delete("/tasks/:id", (req, res) => {
     const id = parseInt(req.params.id);
     tasks = tasks.filter(task => task.id !== id);
 
-    res.json({ message: "Task deleted" });
+    res.json({message:"Task deleted"});
 });
 app.listen(4000,()=>{
     console.log("Server is running on port 4000");
