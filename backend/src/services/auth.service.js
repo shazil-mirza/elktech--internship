@@ -1,8 +1,8 @@
-const User = require('../models/user.model');
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
+import User from '../models/user.model.js';
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
 
-exports.registerUser = async (data) => {
+export const registerUser = async (data) => {
     try {
         const existingUser = await User.findOne({ email: data.email });
         if (existingUser) throw new Error('User already exists');
@@ -21,7 +21,7 @@ exports.registerUser = async (data) => {
     }
 };
 
-exports.loginUser = async (data) => {
+export const loginUser = async (data) => {
     try {
         const user = await User.findOne({ email: data.email });
         if (!user) throw new Error('Invalid credentials');

@@ -1,24 +1,24 @@
-const authService = require('../services/auth.service');
-const { registerValidation, loginValidation } = require('../validations/user.validation');
+import { registerUser, loginUser } from '../services/auth.service.js';
+import { registerValidation, loginValidation } from '../validations/user.validation.js';
 
-exports.register = async (req, res) => {
+export const register = async (req, res) => {
     try {
         const { error } = registerValidation.validate(req.body);
         if (error) return res.status(400).json({ message: error.message });
 
-        const user = await authService.registerUser(req.body);
+        const user = await registerUser(req.body);
         res.status(201).json({ message: 'User registered', user });
     } catch (error) {
         res.status(400).json({ message: error.message });
     }
 };
 
-exports.login = async (req, res) => {
+export const login = async (req, res) => {
     try {
         const { error } = loginValidation.validate(req.body);
         if (error) return res.status(400).json({ message: error.message });
 
-        const token = await authService.loginUser(req.body);
+        const token = await loginUser(req.body);
         res.json({ token });
     } catch (error) {
         res.status(400).json({ message: error.message });
