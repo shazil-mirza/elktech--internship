@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Shazil Portfolio</title>
+  <link rel="stylesheet" href="../assets/styles/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="../assets/images/Profile%20Picture.jpeg" alt="Profile Picture" style="max-width:220px;display:block;margin:1.5rem auto 1rem auto;border-radius:50%;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+      <h1>Hi, I'm Shazil Mirza</h1>
+      <h2 style="color:#4CAF50;margin:0.5rem 0;">Software Engineer | MERN Stack & AI Enthusiast</h2>
+      <p style="font-size:1rem;line-height:1.8;margin:1.5rem auto;max-width:700px;color:#555;">Software Engineering graduate from the University of the Punjab with hands-on experience in MERN stack web development and a strong academic background in Artificial Intelligence and Data Science. Currently working as a MERN Stack Intern, developing scalable RESTful APIs and full-stack web applications. I am passionate about building intelligent, user-centric software solutions that combine clean architecture with real-world impact.</p>
+      <p style="margin-top:1.5rem;margin-bottom:0.5rem;">Gujranwala, Pakistan | <a href="tel:+923237138584">0323-7138584</a> | <a href="mailto:shazilmirxa07@gmail.com">shazilmirxa07@gmail.com</a></p>
+    </section>
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="../assets/images/Green Shield.png" alt="Green Shield Project">
+          <h3> Green Shield – Plant Disease Detection System</h3>
+          <p>A machine learning–based web application that detects plant diseases from images and provides treatment recommendations. Integrated trained ML models with a backend system to deliver real-time predictions and deployment-ready solutions.</p>
+          <div class="project-overlay">
+            <a href="#" class="view-project" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="../assets/images/REST API.png" alt="Scalable RESTful API">
+          <h3> Scalable RESTful API (MERN Stack)</h3>
+          <p>Designed and developed secure REST APIs using Node.js, Express, and MongoDB following MVC architecture. Implemented middleware, authentication, validation, and clean service-controller separation.</p>
+          <div class="project-overlay">
+            <a href="#" class="view-project" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="../assets/images/AI processing .png" alt="AI Data Preprocessing">
+          <h3> AI Data Preprocessing & Model Integration</h3>
+          <p>Built data preprocessing pipelines for machine learning models, including cleaning, transformation, and optimization. Successfully integrated ML models into backend systems for production-ready applications.</p>
+          <div class="project-overlay">
+            <a href="#" class="view-project" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="../assets/images/weather app.png" alt="Weather App">
+          <h3>  Weather App</h3>
+          <p>A dynamic weather application built with JavaScript that provides real-time weather data fetching from public APIs. Users can search weather by city, view current temperature, and get detailed weather forecasts.</p>
+          <div class="project-overlay">
+            <a href="#" class="view-project" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Shazil Mirza. All rights reserved.</p>
+  </footer>
+
+  <div id="projectModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <img id="modalImg" src="" alt="Project Screenshot" style="max-width:100%;border-radius:8px;margin-bottom:1rem;">
+      <p id="modalDesc"></p>
+      <ul id="modalDetails"></ul>
+    </div>
+  </div>
+  <script type="module" src="../js/script.js"></script>
+</body>
+</html>
