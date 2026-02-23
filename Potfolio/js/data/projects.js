@@ -1,7 +1,7 @@
 export const projectData = [
   {
     title: 'Green Shield – Plant Disease Detection System',
-    img: '../Green Shield.png',
+    img: '../assets/images/Green Shield.png',
     desc: 'A machine learning–based web application that detects plant diseases from images and provides treatment recommendations. Integrated trained ML models with a backend system to deliver real-time predictions and deployment-ready solutions.',
     details: [
       'ML-based disease detection from plant images',
@@ -13,7 +13,7 @@ export const projectData = [
   },
   {
     title: 'Scalable RESTful API (MERN Stack)',
-    img: '../REST API.png',
+    img: '../assets/images/REST API.png',
     desc: 'Designed and developed secure REST APIs using Node.js, Express, and MongoDB following MVC architecture. Implemented middleware, authentication, validation, and clean service-controller separation for scalable applications.',
     details: [
       'Node.js and Express backend',
@@ -25,7 +25,7 @@ export const projectData = [
   },
   {
     title: 'AI Data Preprocessing & Model Integration',
-    img: '../Ai processing .png',
+    img: '../assets/images/AI processing .png',
     desc: 'Built data preprocessing pipelines for machine learning models, including cleaning, transformation, and optimization. Successfully integrated ML models into backend systems for production-ready applications.',
     details: [
       'Data cleaning and transformation',
@@ -37,7 +37,7 @@ export const projectData = [
   },
   {
     title: 'Weather App',
-    img: '../weather app.png',
+    img: '../assets/images/weather app.png',
     desc: 'A dynamic weather application built with JavaScript that provides real-time weather data fetching from public APIs. Users can search weather by city, view current temperature, and get detailed weather forecasts with an intuitive and responsive user interface.',
     details: [
       'Real-time weather API integration',

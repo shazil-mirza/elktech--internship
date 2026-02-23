@@ -1,10 +1,11 @@
-
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -12,6 +13,7 @@ body {
   background-color: #f9f9f9;
 }
 
+/* Header & Nav */
 header {
   background-color: #4CAF50;
   padding: 1rem 0;
@@ -34,6 +36,7 @@ nav a:hover {
   color: #ffeb3b;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
@@ -42,6 +45,7 @@ footer {
   margin-top: 2rem;
 }
 
+/* Main content */
 main {
   padding: 2rem;
   display: flex;
@@ -50,13 +54,13 @@ main {
   align-items: center;
 }
 
-
+/* Sections */
 section {
   max-width: 800px;
   text-align: center;
 }
 
-
+/* Buttons */
 button {
   padding: 0.5rem 1rem;
   border: none;
@@ -73,6 +77,7 @@ button:hover {
   transform: translateY(-2px);
 }
 
+/* Forms */
 form {
   display: flex;
   flex-direction: column;
@@ -141,6 +146,7 @@ form button:active {
   transform: translateY(0);
 }
 
+/* Responsive layout */
 @media (min-width: 600px) {
   main {
     flex-direction: row;
@@ -156,6 +162,7 @@ form button:active {
   }
 }
 
+/* Projects section */
 .projects {
   display: flex;
   flex-direction: column;
@@ -191,6 +198,7 @@ form button:active {
   object-fit: cover;
 }
 
+/* Overlay for project card */
 .project-overlay {
   position: absolute;
   top: 0;
@@ -229,6 +237,7 @@ form button:active {
   color: #222;
 }
 
+/* Responsive layout for projects */
 @media (min-width: 600px) {
   .projects {
     flex-direction: row;
@@ -237,6 +246,7 @@ form button:active {
   }
 }
 
+/* Skills section */
 .skills {
   display: flex;
   flex-direction: column;
@@ -270,6 +280,7 @@ form button:active {
   transition: width 1s ease-in-out;
 }
 
+/* Modal for project details */
 .modal {
   display: flex;
   position: fixed;
@@ -315,7 +326,7 @@ form button:active {
   z-index: 1001;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
-
+/* About Page Styling */
 .about-hero {
   max-width: 800px !important;
   margin: 2rem auto !important;
@@ -367,6 +378,7 @@ form button:active {
   font-size: 1.2rem;
 }
 
+/* Skills Section */
 .skills-section {
   max-width: 1000px !important;
   margin: 3rem auto !important;
