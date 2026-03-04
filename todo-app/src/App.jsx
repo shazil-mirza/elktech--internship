@@ -10,14 +10,50 @@ function App() {
   const [filter, setFilter] = useState("all");
 
   const addTodo = (text) => {
-    const newTodo = {
-      id: Date.now(),
-      text,
-      completed: false,
-    };
-    setTodos([...todos, newTodo]);
+  const trimmedText = text.trim();
+
+  if (!trimmedText) return;
+
+  const isDuplicate = todos.some(
+    (todo) => todo.text.toLowerCase() === trimmedText.toLowerCase()
+  );
+
+  if (isDuplicate) {
+    alert("Task already exists!");
+    return;
+  }
+
+  const newTodo = {
+    id: Date.now(),
+    text: trimmedText,
+    completed: false,
   };
 
+  setTodos([...todos, newTodo]);
+};
+
+const editTodo = (id, newText) => {
+  const trimmedText = newText.trim();
+  if (!trimmedText) return;
+
+  // 🔥 Prevent duplicate (case-insensitive)
+  const isDuplicate = todos.some(
+    (todo) =>
+      todo.id !== id &&
+      todo.text.toLowerCase() === trimmedText.toLowerCase()
+  );
+
+  if (isDuplicate) {
+    alert("Task already exists!");
+    return;
+  }
+
+  setTodos(
+    todos.map((todo) =>
+      todo.id === id ? { ...todo, text: trimmedText } : todo
+    )
+  );
+};
   const deleteTodo = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
@@ -45,6 +81,7 @@ function App() {
         todos={filteredTodos}
         deleteTodo={deleteTodo}
         toggleComplete={toggleComplete}
+        editTodo={editTodo} 
       />
     </div>
   );
