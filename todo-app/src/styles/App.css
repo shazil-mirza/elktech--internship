@@ -1,0 +1,137 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Container */
+.container {
+  background: white;
+  width: 420px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px 14px;
+  border: none;
+  background: #667eea;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #5a67d8;
+}
+
+/* Filters */
+.filters {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.filters button {
+  margin: 0 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background: #e2e8f0;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: #cbd5e1;
+}
+
+/* List */
+ul {
+  list-style: none;
+}
+
+/* Todo Card */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #f7fafc;
+  border-radius: 8px;
+}
+
+/* Text Styling */
+li span {
+  flex: 1;
+  word-break: break-word;     /* ✅ Prevent overflow */
+  overflow-wrap: break-word;  /* ✅ Wrap long words */
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+/* Completed */
+.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Delete Button */
+li button {
+  flex-shrink: 0;  /* ✅ Prevent shrinking */
+  border: none;
+  background: #e53e3e;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+li button:first-of-type {
+  background: #3182ce;
+}
+
+li button:first-of-type:hover {
+  background: #2b6cb0;
+}
+
+li button:hover {
+  background: #c53030;
+}
+
+/* Empty text */
+p {
+  text-align: center;
+  color: gray;
+}
